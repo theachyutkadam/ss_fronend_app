@@ -1,0 +1,5 @@
+<%= form_for("", url: welcome_sign_in_path, method: "get" ) do |f| %>
+  <%= f.text_field(:email, placeholder: "Enter Email" ) %><br><br>
+    <%= f.password_field(:password) %><br><br>
+      <%= f.submit "Submit" %>
+        <% end %>
