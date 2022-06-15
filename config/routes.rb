@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'customer/index'
+  get 'customer/new'
+  get 'customer/edit'
+  get 'customer/delete'
   get 'welcome/login'
   get 'welcome/sign_in'
   root 'welcome#index'
