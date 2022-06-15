@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :admins
+  resources :customers
   get 'welcome/login'
   get 'welcome/sign_in'
   root 'welcome#index'
