@@ -64,13 +64,15 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
 
-  config.action_mailer.default_url_options = { :host => 'http://localhost:3000', :protocol => 'http' }
+  # config.action_mailer.default_url_options = { :host => 'localhost:3000', :protocol => 'http' }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   config.action_mailer.smtp_settings = {
     :address => 'smtp.gmail.com',
-    :port => 601,
-    :user_name => "achyutkadam27@gmail.com",
-    :password => "123",
+    :domain => 'smtp.gmail.com',
+    :port => 587,
+    :user_name => "user_name",
+    :password => "password",
     :authentication => 'plain',
     :enable_starttls_auto => true
     }
